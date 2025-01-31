@@ -1,0 +1,124 @@
+@import url("./modals/index.css");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    height: 800px;
+}
+
+.documents-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.document {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    min-width: 250px;
+    min-height: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.document h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    padding: 4px 8px;
+    font-weight: bold;
+}
+
+.divider {
+    border-top: 2px solid black;
+    margin: 10px 0px;
+}
+
+.document p {
+    margin: 5px 0;
+    padding: 4px 8px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .document {
+        padding: 15px;
+        width: calc(50% - 20px);
+    }
+
+    .document h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .document {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .document {
+        padding: 15px;
+    }
+
+    .document h2 {
+        font-size: 16px;
+    }
+}
